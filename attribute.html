@@ -9,8 +9,12 @@
         color: red;
       }
 
-      p[title|="belajar"] {
+      [title*="belajar"] {
         color: green;
+      }
+
+      .article[title*="belajar"] {
+        color: blue;
       }
     </style>
   </head>
@@ -20,8 +24,12 @@
     <a href="#" target="_blank">Contoh 2</a>
     <a href="#" target="_parent">Contoh 3</a>
 
-    <p title="belajar coding">Ini tidak dipilih</p>
+    <p title="belajar coding">Ini dipilih</p>
     <p title="belajar">Ini dipilih</p>
     <p title="belajar-coding">Ini dipilih</p>
+    <p title="coding css belajar">Ini dipilih</p>
+
+    <span title="belajar">Ini contoh span</span>
+    <span class="article" title="belajar">Ini contoh class</span>
   </body>
 </html>
