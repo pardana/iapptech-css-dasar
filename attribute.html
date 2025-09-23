@@ -8,6 +8,10 @@
       a[target="_blank"] {
         color: red;
       }
+
+      p[title|="belajar"] {
+        color: green;
+      }
     </style>
   </head>
 
@@ -15,5 +19,9 @@
     <a href="#">Contoh 1</a>
     <a href="#" target="_blank">Contoh 2</a>
     <a href="#" target="_parent">Contoh 3</a>
+
+    <p title="belajar coding">Ini tidak dipilih</p>
+    <p title="belajar">Ini dipilih</p>
+    <p title="belajar-coding">Ini dipilih</p>
   </body>
 </html>
